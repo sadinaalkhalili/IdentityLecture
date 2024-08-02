@@ -13,6 +13,14 @@ namespace IdentityLecture2.Models.ViewModel
         [EmailAddress]
         [Description("Email")]
         public string Email { get; set; }
+        [Required]
+        [StringLength(100)]
+        [Description("firstName")]
+        public string firstName { get; set; }
+        [Required]
+        [StringLength(100)]
+        [Description("lastName")]
+        public string lastName { get; set; }
 
         [Required]
         [PasswordPropertyText]

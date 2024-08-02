@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IdentityLecture2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+839ef39dcbe9072ad95a99cdd0d13073dca0072a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+99294d9d03e7514522f43409d8a0edfbef5f1470")]
 [assembly: System.Reflection.AssemblyProductAttribute("IdentityLecture2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IdentityLecture2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

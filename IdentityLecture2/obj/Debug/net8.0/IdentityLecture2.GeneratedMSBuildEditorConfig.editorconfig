@@ -18,6 +18,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Rahmeh\OneDrive\Desktop\MVC\IdentityLecture2\IdentityLecture2
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Rahmeh/OneDrive/Desktop/MVC/IdentityLecture2/IdentityLecture2/Views/Account/EditUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxFZGl0VXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rahmeh/OneDrive/Desktop/MVC/IdentityLecture2/IdentityLecture2/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Rahmeh/OneDrive/Desktop/MVC/IdentityLecture2/IdentityLecture2/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

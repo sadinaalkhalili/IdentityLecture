@@ -1,11 +1,37 @@
 ﻿@using Microsoft.AspNetCore.Identity
-@inject SignInManager<IdentityUser> SignInManager
-@inject UserManager<IdentityUser> UserManager
+@inject SignInManager<Identity> SignInManager
+@inject UserManager<Identity> UserManager
+@model IdentityLecture2.Models.ViewModel.UserRegisterViewModel
 
+
+@if (SignInManager.IsSignedIn(User))
+{
+    var user = await UserManager.GetUserAsync(User);
+
+        <span>
+            <span>@user.firstName</span>-
+            <span>@user.Email</span>
+        <span>
+            <a href="@Url.Action("EditUser", "Account")">Edit User</a>
+        </span>
+        </span>
+
+        @using (Html.BeginForm("Signout", "Account", FormMethod.Post))
+        {
+            <button type="submit" class="btn btn-danger">Logout</button>
+        }
+
+    
+
+}
+
+else
+{
 
     <li class="nav-item">
         <a class="nav-link text-dark" asp-action="Register" asp-controller="Account">Register</a>
     </li>
     <li class="nav-item">
-            <a class="nav-link text-dark" asp-action="Login" asp-controller="Account">Login</a>
+        <a class="nav-link text-dark" asp-action="Login" asp-controller="Account">Login</a>
     </li>
+}

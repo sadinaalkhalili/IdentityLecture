@@ -1,0 +1,26 @@
+﻿@model IdentityLecture2.Models.ViewModel.UserRegisterViewModel
+@using (Html.BeginForm("Login", "Account", FormMethod.Post))
+{
+    <div class="container-fluid">
+    <div class="row flex-column">
+
+        <div class="col-md-4 mt-3 form-group">
+            @Html.LabelFor(item => item.UserName)
+                @Html.TextBoxFor(item => item.UserName, htmlAttributes: new { @class = "form-control" })
+
+        </div>
+
+         <div class="col-md-4">
+            @Html.LabelFor(item => item.Password)
+            @Html.TextBoxFor(item => item.Password, new { @type = "password", @class = "form-control" })
+
+        </div>
+        <div class="col-md-4">
+        <button type="submit">Login</button>
+        </div>
+    </div>
+    </div>
+
+    
+}
+

@@ -1,3 +1,4 @@
+using IdentityLecture2;
 using IdentityLecture2.Data;
 using IdentityLecture2.Models;
 using Microsoft.AspNetCore.Identity;
@@ -11,7 +12,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options =>
+builder.Services.AddIdentity<Identity,IdentityRole>(options =>
 { options.SignIn.RequireConfirmedAccount = false;
     options.Password.RequireNonAlphanumeric = false;
     options.Password.RequiredLength = 3;
@@ -20,6 +21,7 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options =>
 }
 )
     .AddEntityFrameworkStores<ApplicationDbContext>();
+builder.Services.AddRazorPages();
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
